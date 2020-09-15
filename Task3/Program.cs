@@ -14,7 +14,7 @@ namespace Task3
             l.Sort(new NameCompare());
             Employee.ShowEmployeeList(l);
 
-            l.Sort(new SalaryComapare());
+            l.Sort(new SalaryCompare());
             Employee.ShowEmployeeList(l);
         }
     }

@@ -38,25 +38,4 @@ namespace Task3
             Console.WriteLine();
         }
     }
-
-    class NameCompare : IComparer<Employee>
-    {
-       public int Compare(Employee e1, Employee e2)
-       {
-            return String.Compare(e1.Name, e2.Name);    
-       }
-    }
-
-    class SalaryComapare : IComparer<Employee>
-    {
-        public int Compare(Employee e1, Employee e2)
-        {
-            if (e1.Salary > e2.Salary)
-                return 1;
-            else if (e1.Salary < e2.Salary)
-                return -1;
-            else
-                return 0;
-        }
-    }
 }
